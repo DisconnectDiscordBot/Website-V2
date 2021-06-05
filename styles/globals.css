@@ -1,30 +1,31 @@
-
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
 
+/* Color Picker: https://imagecolorpicker.com/color-code/24252a */
 *:root {
-  --darkgrey: #202020;
-  --grey: #404040;
-  --lightgrey: #686868;
-  --greytext: #E0E0E0;
-  --text: #ffffff;
-  --primarycolor: #ffffff;
+	--darkgrey: #121315;
+	--grey: #24252a;
+	--lightgrey: #3a3b3f;
+	--greytext: #e0e0e0;
+	--text: #ffffff;
+	--primarycolor: #ffffff;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  color: var(--greytext);
-  background-color: var(--grey);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.45;
+	color: var(--greytext);
+	background-color: var(--grey);
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
