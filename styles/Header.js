@@ -13,7 +13,9 @@ export const NavBar = styled.div`
 
 export const Nav = styled.div``;
 
-export const Branding = styled.div``;
+export const Branding = styled.div`
+	margin: 0px 10px;
+`;
 
 export const NavList = styled.ul`
 	text-decoration: none;

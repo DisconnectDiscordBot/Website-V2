@@ -8,7 +8,10 @@ export default function Header({ page }) {
 			<NavBar>
 				<Nav>
 					<Branding>
-						{/* <img src='../public/disconnect.png' alt='Disconnect Logo'/> */}
+						<img
+							src='./assets/disconnect.png'
+							alt='Disconnect Logo'
+						/>
 						<h2>Disconnect</h2>
 					</Branding>
 					<NavList>
