@@ -1,0 +1,61 @@
+.container {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.main {
+	width: 60%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	margin: 100px 25px;
+}
+
+.main .info {
+	color: var(--textNormal);
+}
+
+.main .info h2 {
+	width: 100%;
+	font-size: 2rem;
+	text-align: left;
+}
+
+.main .info p {
+	width: 85%;
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+.infoButtons {
+	width: 85%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.infoButtons a {
+	margin: 10px 10px 0 0;
+	width: 50%;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 1.15rem;
+	letter-spacing: 0.5px;
+	background-color: var(--primary);
+}
+
+.infoButtons a:hover {
+	background-color: var(--secondary);
+}
+
+.main .image img {
+	width: 100%;
+	border-radius: 2rem;
+}
