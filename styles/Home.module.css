@@ -49,6 +49,7 @@
 	font-size: 1.15rem;
 	letter-spacing: 0.5px;
 	background-color: var(--primary);
+	position: relative;
 }
 
 .infoButtons a:hover {
@@ -57,5 +58,36 @@
 
 .main .image img {
 	width: 100%;
+	position: relative;
 	border-radius: 2rem;
+}
+
+/* Features */
+.inner {
+	width: 90%;
+}
+
+.features img {
+	margin-bottom: 0;
+	padding: 0;
+	position: relative;
+	top: 8px;
+}
+
+.features .container {
+	margin: 0;
+	padding: 20px;
+	position: relative;
+	background-color: var(--secondary);
+}
+
+.grid {
+	width: 100%;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.feature {
+	width: 100%;
 }

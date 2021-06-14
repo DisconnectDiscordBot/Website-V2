@@ -41,7 +41,79 @@ export default function Home() {
 					{/* Content */}
 					<div className={styles.container}>
 						<div className={styles.inner}>
-							<div className={styles.grid}></div>
+							<h2>Features</h2>
+							<p>
+								Here are just a few of many features contained
+								in Disconnect.
+							</p>
+							<div className={styles.grid}>
+								<div className={styles.feature}>
+									<img
+										className={styles.feather}
+										src='/assets/icons/link.svg'
+										alt='Invite Icon'
+									/>
+									<p className={styles.title}>Feature 1</p>
+									<p className={styles.description}>
+										Feature Description
+									</p>
+								</div>
+								<div className={styles.feature}>
+									<img
+										className={styles.feather}
+										src='/assets/icons/link.svg'
+										alt='Invite Icon'
+									/>
+									<p className={styles.title}>Feature 2</p>
+									<p className={styles.description}>
+										Feature Description
+									</p>
+								</div>
+								<div className={styles.feature}>
+									<img
+										className={styles.feather}
+										src='/assets/icons/link.svg'
+										alt='Invite Icon'
+									/>
+									<p className={styles.title}>Feature 3</p>
+									<p className={styles.description}>
+										Feature Description
+									</p>
+								</div>
+								<div className={styles.feature}>
+									<img
+										className={styles.feather}
+										src='/assets/icons/link.svg'
+										alt='Invite Icon'
+									/>
+									<p className={styles.title}>Feature 4</p>
+									<p className={styles.description}>
+										Feature Description
+									</p>
+								</div>
+								<div className={styles.feature}>
+									<img
+										className={styles.feather}
+										src='/assets/icons/link.svg'
+										alt='Invite Icon'
+									/>
+									<p className={styles.title}>Feature 5</p>
+									<p className={styles.description}>
+										Feature Description
+									</p>
+								</div>
+								<div className={styles.feature}>
+									<img
+										className={styles.feather}
+										src='/assets/icons/link.svg'
+										alt='Invite Icon'
+									/>
+									<p className={styles.title}>Feature 6</p>
+									<p className={styles.description}>
+										Feature Description
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
