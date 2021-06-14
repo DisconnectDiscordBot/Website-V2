@@ -103,3 +103,8 @@
 	font-size: 1.25;
 	font-weight: bold;
 }
+
+.feather {
+	filter: brightness(1) invert(0.75);
+	font-size: 4rem;
+}
