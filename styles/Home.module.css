@@ -79,7 +79,7 @@
 	padding: 20px;
 	position: relative;
 	color: #ffffff;
-	background-color: var(--secondary);
+	background-color: var(--primary);
 }
 
 .grid {
@@ -93,4 +93,13 @@
 .feature {
 	width: 100%;
 	color: #ffffff;
+}
+
+.feature p {
+	font-size: 1rem;
+}
+
+.feature .title {
+	font-size: 1.25;
+	font-weight: bold;
 }
