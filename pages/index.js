@@ -180,10 +180,8 @@ export default function Home() {
 										src='/assets/icons/users.svg'
 										alt='Servers Icon'
 									/>
+									<p className={styles.description}>267</p>
 									<p className={styles.title}>Servers</p>
-									<p className={styles.description}>
-										Feature Description
-									</p>
 								</div> 
 								<div className={styles.feature}>
 									<img
@@ -191,10 +189,8 @@ export default function Home() {
 										src='/assets/icons/users.svg'
 										alt='Welcoming Icon'
 									/>
+									<p className={styles.description}>254,768</p>
 									<p className={styles.title}>Users</p>
-									<p className={styles.description}>
-										Feature Description
-									</p>
 								</div> 
 								<div className={styles.feature}>
 									<img
@@ -202,17 +198,15 @@ export default function Home() {
 										src='/assets/icons/users.svg'
 										alt='Welcoming Icon'
 									/>
+									<p className={styles.description}>2,654</p>
 									<p className={styles.title}>Channels</p>
-									<p className={styles.description}>
-										Feature Description
-									</p>
 								</div> 
 							</div>
 
 							<div className={styles.stat}>
  								{/* Insert stat icon */}
 								<p className={styles.num}>99.9% Uptime</p>
-								<h2>But will it ever go down on me</h2>
+								<h3>But will it ever go down on me?</h3>
 								<p>Disconnect will never go down without giving a warning to all users which use Disconnect. Aswell as many updates preformed happen during the U.S. night to prevent inconviences.</p>
 							</div>
 						</div>
