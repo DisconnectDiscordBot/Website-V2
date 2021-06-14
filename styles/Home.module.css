@@ -78,16 +78,19 @@
 	margin: 0;
 	padding: 20px;
 	position: relative;
+	color: #ffffff;
 	background-color: var(--secondary);
 }
 
 .grid {
 	width: 100%;
 	display: grid;
+	color: #ffffff;
 	grid-template-rows: auto;
 	grid-template-columns: repeat(3, 1fr);
 }
 
 .feature {
 	width: 100%;
+	color: #ffffff;
 }
