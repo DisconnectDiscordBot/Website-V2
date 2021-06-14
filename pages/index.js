@@ -51,7 +51,7 @@ export default function Home() {
 									<img
 										className={styles.feather}
 										src='/assets/icons/music.svg'
-										alt='Invite Icon'
+										alt='Music Icon'
 									/>
 									<p className={styles.title}>Music</p>
 									<p className={styles.description}>
@@ -65,7 +65,7 @@ export default function Home() {
 									<img
 										className={styles.feather}
 										src='/assets/icons/dollar-sign.svg'
-										alt='Invite Icon'
+										alt='Economy Icon'
 									/>
 									<p className={styles.title}>Economy</p>
 									<p className={styles.description}>
@@ -73,44 +73,44 @@ export default function Home() {
 										and reward active members.
 									</p>
 								</div>
-								<div className={styles.feature}>
+								{/* <div className={styles.feature}>
 									<img
 										className={styles.feather}
 										src='/assets/icons/globe.svg'
-										alt='Invite Icon'
+										alt='Multilingual Icon'
 									/>
 									<p className={styles.title}>Multilingual</p>
 									<p className={styles.description}>
 										Feature Description
 									</p>
-								</div>
-								<div className={styles.feature}>
+								</div> */}
+								{/* <div className={styles.feature}>
 									<img
 										className={styles.feather}
 										src='/assets/icons/bar-chart.svg'
-										alt='Invite Icon'
+										alt='Leveling Icon'
 									/>
 									<p className={styles.title}>Leveling</p>
 									<p className={styles.description}>
 										Feature Description
 									</p>
-								</div>
+								</div> */}
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
 										src='/assets/icons/users.svg'
-										alt='Invite Icon'
+										alt='Welcoming Icon'
 									/>
 									<p className={styles.title}>Welcoming</p>
 									<p className={styles.description}>
 										Feature Description
 									</p>
-								</div>
-								<div className={styles.feature}>
+								</div> 
+								{/* <div className={styles.feature}>
 									<img
 										className={styles.feather}
 										src='/assets/icons/user-plus.svg'
-										alt='Invite Icon'
+										alt='Role Management Icon'
 									/>
 									<p className={styles.title}>
 										Role Management
@@ -118,51 +118,102 @@ export default function Home() {
 									<p className={styles.description}>
 										Feature Description
 									</p>
-								</div>
+								</div> */}
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
 										src='/assets/icons/star.svg'
-										alt='Invite Icon'
+										alt='Engagement Icon'
 									/>
 									<p className={styles.title}>Engagement</p>
 									<p className={styles.description}>
-										Feature Description
+										Get engaged with reputation, suggestions, polls, giveaways, would your rather and more...
 									</p>
 								</div>
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
 										src='/assets/icons/video.svg'
-										alt='Invite Icon'
+										alt='Media Icon'
 									/>
 									<p className={styles.title}>Media</p>
 									<p className={styles.description}>
-										Feature Description
+										Connect your favorite platforms and bring tweets, live streams, and youtube video notifications into your community.
 									</p>
 								</div>
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
 										src='/assets/icons/database.svg'
-										alt='Invite Icon'
+										alt='Statistics Icon'
 									/>
 									<p className={styles.title}>Statistics</p>
 									<p className={styles.description}>
-										Feature Description
+										Get stats from many of your favorite games in real time or get statistic updates from your server.
 									</p>
 								</div>
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
 										src='/assets/icons/grid.svg'
-										alt='Invite Icon'
+										alt='More Icon'
 									/>
 									<p className={styles.title}>and More...</p>
 									<p className={styles.description}>
-										Feature Description
+										Some of the things Disconnect does is hard to mention. Stuff like custom commands, reminders, mocking, and many others are all avalible to use.
 									</p>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className={styles.other}>
+					<div className={styles.container}>
+						<div className={styles.inner}>
+							<h2>Still need convincing?</h2>
+							<p>Disconnect is trusted by</p>
+							
+							<div className={styles.grid}>
+								<div className={styles.feature}>
+									<img
+										className={styles.feather}
+										src='/assets/icons/users.svg'
+										alt='Servers Icon'
+									/>
+									<p className={styles.title}>Servers</p>
+									<p className={styles.description}>
+										Feature Description
+									</p>
+								</div> 
+								<div className={styles.feature}>
+									<img
+										className={styles.feather}
+										src='/assets/icons/users.svg'
+										alt='Welcoming Icon'
+									/>
+									<p className={styles.title}>Users</p>
+									<p className={styles.description}>
+										Feature Description
+									</p>
+								</div> 
+								<div className={styles.feature}>
+									<img
+										className={styles.feather}
+										src='/assets/icons/users.svg'
+										alt='Welcoming Icon'
+									/>
+									<p className={styles.title}>Channels</p>
+									<p className={styles.description}>
+										Feature Description
+									</p>
+								</div> 
+							</div>
+
+							<div className={styles.stat}>
+ 								{/* Insert stat icon */}
+								<p className={styles.num}>99.9% Uptime</p>
+								<h2>But will it ever go down on me</h2>
+								<p>Disconnect will never go down without giving a warning to all users which use Disconnect. Aswell as many updates preformed happen during the U.S. night to prevent inconviences.</p>
 							</div>
 						</div>
 					</div>
