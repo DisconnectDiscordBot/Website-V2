@@ -50,10 +50,18 @@
 	letter-spacing: 0.5px;
 	background-color: var(--primary);
 	position: relative;
+	transition: all 0.5s ease;
 }
 
 .infoButtons a:hover {
 	background-color: var(--secondary);
+	box-shadow: 0px 5px 10px #ff52525b;
+}
+
+.infoButtons a:focus,
+.infoButtons a:active {
+	background-color: var(--primary);
+	transition: none;
 }
 
 .main .image img {
@@ -67,11 +75,22 @@
 	width: 90%;
 }
 
-.features img {
+.inner h2 {
+	letter-spacing: 1px;
+}
+
+.topWave {
 	margin-bottom: 0;
 	padding: 0;
 	position: relative;
 	top: 8px;
+}
+
+.bottomWave {
+	margin-bottom: 0;
+	padding: 0;
+	position: relative;
+	top: -25px;
 }
 
 .features .container {
@@ -110,4 +129,68 @@
 	filter: brightness(1) invert(1);
 	width: 50px;
 	height: 50px;
+}
+
+/* Bottom Section */
+
+.other,
+.stat {
+	margin: 50px 0;
+}
+
+.other .inner,
+.getStarted .inner {
+	color: #ffffff;
+}
+
+.other .num {
+	font-size: 2rem;
+}
+
+.other .title {
+	letter-spacing: 1px;
+}
+
+.stat h3,
+.other h2,
+.getStarted h2,
+.stat p,
+.other p,
+.getStarted p {
+	margin: 5px 0;
+}
+
+/* Get Started */
+
+.buttons {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.buttons a {
+	margin: 10px 10px 0 0;
+
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 1rem;
+	letter-spacing: 0.5px;
+	background-color: var(--primary);
+	position: relative;
+	transition: all 0.5s ease;
+}
+
+.buttons a:hover {
+	background-color: var(--secondary);
+	box-shadow: 0px 5px 10px #ff52525b;
+}
+
+.buttons a:focus,
+.buttons a:active {
+	background-color: var(--primary);
+	transition: none;
 }

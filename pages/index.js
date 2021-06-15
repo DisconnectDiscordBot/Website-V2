@@ -36,7 +36,10 @@ export default function Home() {
 				</div>
 				<div className={styles.features}>
 					{/* Wave */}
-					<img src='/assets/icons/waves.svg' />
+					<img
+						src='/assets/icons/topwave.svg'
+						className={styles.topWave}
+					/>
 
 					{/* Content */}
 					<div className={styles.container}>
@@ -105,7 +108,7 @@ export default function Home() {
 									<p className={styles.description}>
 										Feature Description
 									</p>
-								</div> 
+								</div>
 								{/* <div className={styles.feature}>
 									<img
 										className={styles.feather}
@@ -127,7 +130,9 @@ export default function Home() {
 									/>
 									<p className={styles.title}>Engagement</p>
 									<p className={styles.description}>
-										Get engaged with reputation, suggestions, polls, giveaways, would your rather and more...
+										Get engaged with reputation,
+										suggestions, polls, giveaways, would
+										your rather and more...
 									</p>
 								</div>
 								<div className={styles.feature}>
@@ -138,7 +143,9 @@ export default function Home() {
 									/>
 									<p className={styles.title}>Media</p>
 									<p className={styles.description}>
-										Connect your favorite platforms and bring tweets, live streams, and youtube video notifications into your community.
+										Connect your favorite platforms and
+										bring tweets, live streams, and youtube
+										video notifications into your community.
 									</p>
 								</div>
 								<div className={styles.feature}>
@@ -149,9 +156,12 @@ export default function Home() {
 									/>
 									<p className={styles.title}>Statistics</p>
 									<p className={styles.description}>
-										Get stats from many of your favorite games in real time or get statistic updates from your server.
+										Get stats from many of your favorite
+										games in real time or get statistic
+										updates from your server.
 									</p>
 								</div>
+								<div></div>
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
@@ -160,54 +170,90 @@ export default function Home() {
 									/>
 									<p className={styles.title}>and More...</p>
 									<p className={styles.description}>
-										Some of the things Disconnect does is hard to mention. Stuff like custom commands, reminders, mocking, and many others are all avalible to use.
+										Some of the things Disconnect does is
+										hard to mention. Stuff like custom
+										commands, reminders, mocking, and many
+										others are all avalible to use.
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+
+					{/* Wave */}
+					<img
+						src='/assets/icons/bottomwave.svg'
+						className={styles.bottomWave}
+					/>
 				</div>
 				<div className={styles.other}>
 					<div className={styles.container}>
 						<div className={styles.inner}>
 							<h2>Still need convincing?</h2>
 							<p>Disconnect is trusted by</p>
-							
+
 							<div className={styles.grid}>
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
-										src='/assets/icons/users.svg'
+										src='/assets/icons/server.svg'
 										alt='Servers Icon'
 									/>
-									<p className={styles.description}>267</p>
+									<p className={styles.num}>272</p>
 									<p className={styles.title}>Servers</p>
-								</div> 
+								</div>
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
 										src='/assets/icons/users.svg'
 										alt='Welcoming Icon'
 									/>
-									<p className={styles.description}>254,768</p>
+									<p className={styles.num}>254,768</p>
 									<p className={styles.title}>Users</p>
-								</div> 
+								</div>
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
-										src='/assets/icons/users.svg'
+										src='/assets/icons/list.svg'
 										alt='Welcoming Icon'
 									/>
-									<p className={styles.description}>2,654</p>
+									<p className={styles.num}>2,654</p>
 									<p className={styles.title}>Channels</p>
-								</div> 
+								</div>
 							</div>
 
 							<div className={styles.stat}>
- 								{/* Insert stat icon */}
-								<p className={styles.num}>99.9% Uptime</p>
 								<h3>But will it ever go down on me?</h3>
-								<p>Disconnect will never go down without giving a warning to all users which use Disconnect. Aswell as many updates preformed happen during the U.S. night to prevent inconviences.</p>
+								<p>
+									Disconnect will never go down without giving
+									a warning to all users which use Disconnect.
+								</p>
+								<p>
+									Updates are also preformed during U.S. night
+									time to prevent inconveniences, while trying
+									to maintain it's 99.9% uptime.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className={styles.getStarted}>
+					<div className={styles.container}>
+						<div className={styles.inner}>
+							<h2>Get Started!</h2>
+							<p>
+								It's time to get this journey started, don't you
+								think?
+							</p>
+
+							<div className={styles.buttons}>
+								<Link href='/invite'>
+									<a>Invite Disconnect</a>
+								</Link>
+								<Link href='/support'>
+									<a>Support Server</a>
+								</Link>
 							</div>
 						</div>
 					</div>

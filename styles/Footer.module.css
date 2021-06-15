@@ -1,0 +1,50 @@
+.container {
+	width: 100%;
+	display: flex;
+	margin: 75px 0 0 0;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.inner {
+	width: 100%;
+	display: flex;
+	background-color: var(--baseDark);
+	margin: 50px 0 0 0;
+	flex-direction: row;
+	color: var(--textGrey);
+	justify-content: space-between;
+	background-color: var(--baseDark);
+}
+
+.basic,
+.links {
+	margin: 25px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.brand {
+	font-weight: bold;
+	font-size: 1.15rem;
+	color: var(--primary);
+}
+
+.links a {
+	transition: color 0.5s;
+}
+
+.links a:hover {
+	color: var(--secondary);
+}
+
+.buttons a:focus,
+.buttons a:active {
+	background-color: #ffffff;
+	transition: none;
+}

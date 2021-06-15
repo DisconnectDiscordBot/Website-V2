@@ -37,6 +37,7 @@
 
 .branding h2 {
 	margin: 8px 10px;
+	transition: all 0.5s ease;
 	color: var(--textGrey);
 }
 
@@ -61,11 +62,13 @@
 .feather {
 	filter: brightness(1) invert(0.75);
 	font-size: 1.5rem;
+	transition: all 0.5s ease;
 }
 
 .activeFeather {
 	filter: invert(39%) sepia(73%) saturate(7263%) hue-rotate(329deg)
 		brightness(99%) contrast(105%);
+	transition: all 0.5s ease;
 }
 
 .activeFeather:hover {
@@ -111,4 +114,29 @@
 .icon:hover .iconText {
 	visibility: visible;
 	opacity: 0.75;
+}
+
+/* Dashboard Side */
+.dash {
+	margin: 10px;
+	display: flex;
+}
+
+.dash a {
+	margin: 3px 15px;
+	padding: 5px 30px;
+	border: 1px var(--primary) solid;
+	border-radius: 10px;
+	font-size: 1.25rem;
+	position: relative;
+	text-transform: uppercase;
+	color: var(--textGrey);
+	transition: all 0.5s ease;
+}
+
+.dash a:hover {
+	color: var(--textNormal);
+	border: 1px var(--secondary) solid;
+	background-color: var(--secondary);
+	box-shadow: 0px 5px 10px #ff52525b;
 }
