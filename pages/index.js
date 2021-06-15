@@ -44,7 +44,7 @@ export default function Home() {
 					{/* Content */}
 					<div className={styles.container}>
 						<div className={styles.inner}>
-							<h2>Features</h2>
+							<h2 id='features'>Features</h2>
 							<p>
 								Here are just a few of many features contained
 								in Disconnect.
@@ -161,20 +161,24 @@ export default function Home() {
 										updates from your server.
 									</p>
 								</div>
-								<div></div>
 								<div className={styles.feature}>
-									<img
-										className={styles.feather}
-										src='/assets/icons/grid.svg'
-										alt='More Icon'
-									/>
-									<p className={styles.title}>and More...</p>
-									<p className={styles.description}>
-										Some of the things Disconnect does is
-										hard to mention. Stuff like custom
-										commands, reminders, mocking, and many
-										others are all avalible to use.
-									</p>
+									<div className={styles.final}>
+										<img
+											className={styles.feather}
+											src='/assets/icons/grid.svg'
+											alt='More Icon'
+										/>
+										<p className={styles.title}>
+											and More...
+										</p>
+										<p className={styles.description}>
+											Some of the things Disconnect does
+											is hard to mention. Stuff like
+											custom commands, reminders, mocking,
+											and many others are all avalible to
+											use.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>

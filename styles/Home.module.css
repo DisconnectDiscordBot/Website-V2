@@ -8,11 +8,12 @@
 }
 
 .main {
+	overflow: hidden;
 	width: 60%;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	margin: 100px 25px;
+	margin: 200px 25px 100px 25px;
 }
 
 .main .info {
@@ -94,6 +95,7 @@
 }
 
 .features .container {
+	overflow: hidden;
 	margin: 0;
 	padding: 20px;
 	position: relative;
@@ -109,10 +111,28 @@
 	grid-template-columns: repeat(3, 1fr);
 }
 
+.grid div:nth-child(7) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	grid-column: 1/4;
+}
+
+.grid .final {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 30%;
+}
+
 .feature {
 	margin: 15px 0;
 	padding: 10px;
 	width: 100%;
+	overflow: hidden;
 	color: #ffffff;
 }
 
@@ -136,6 +156,11 @@
 .other,
 .stat {
 	margin: 50px 0;
+	overflow: hidden;
+}
+
+.getStarted {
+	overflow: hidden;
 }
 
 .other .inner,
@@ -193,4 +218,103 @@
 .buttons a:active {
 	background-color: var(--primary);
 	transition: none;
+}
+
+/* Responsiveness */
+@media (max-width: 1264px) {
+	.infoButtons {
+		flex-direction: column;
+	}
+	.infoButtons a {
+		width: 90%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.features .grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.grid div:nth-child(7) {
+		grid-column: 1/3;
+	}
+
+	.grid .final {
+		width: 40%;
+	}
+
+	.grid .hidden {
+		display: none;
+		visibility: hidden;
+	}
+
+	.main {
+		margin: 100px 25px;
+	}
+}
+
+@media (max-width: 750px) {
+	.main {
+		flex-direction: column;
+	}
+
+	.main .info {
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+
+	.main .info h2,
+	.main .info p {
+		width: 100%;
+		text-align: center;
+	}
+
+	.main .image img {
+		width: 350px;
+	}
+}
+
+@media (max-width: 675px) {
+	.features .grid {
+		grid-template-columns: 1fr;
+	}
+
+	.grid div:nth-child(7) {
+		grid-column: 1;
+	}
+
+	.grid .final {
+		width: 100%;
+	}
+}
+
+@media (max-width: 400px) {
+	.main {
+		width: 90%;
+	}
+
+	.main .info h2 {
+		font-size: 1.5rem;
+	}
+
+	.main .image img {
+		width: 200px;
+	}
+
+	.other .grid {
+		grid-template-columns: 1fr;
+	}
+
+	.buttons {
+		flex-direction: column;
+	}
+
+	.buttons a {
+		width: 90%;
+		margin: 5px;
+	}
 }
