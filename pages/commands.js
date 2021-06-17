@@ -45,6 +45,11 @@ export default function Commands() {
 						Disconnect has over {numberOfCategories} categories with{' '}
 						{numberOfCommands} commands.
 					</p>
+					<div className={styles.syntax}>
+						<h3>Disconnect Syntax</h3>
+						<p>{"Do not remember your prefix? Just @Disconnect and he will remind you!"}</p>
+						<p className={styles.codebloc}><required>  -   [optional]   -   Select || One   -   ★ is a Premium Command   -   ⚙️ is a Configurable Command</p>
+					</div>
 				</div>
 			</Layout>
 		</>
