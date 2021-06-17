@@ -37,10 +37,10 @@
 
 .links a {
 	transition: color 0.5s;
-}
 
-.links a:hover {
-	color: var(--secondary);
+    &:hover {
+        color: var(--secondary);
+    }
 }
 
 .buttons a:focus,
