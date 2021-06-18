@@ -8,7 +8,8 @@
 *:root {
 	--baseDark: #090c11;
 	--baseDarkTrans: #090c11a6;
-	--baseNormal: #24252a;
+	--baseNormal: #0c0f22;
+	--baseBit: #0d131d;
 	--baseLight: #1b2433;
 	--textNormal: #ffffff;
 	--textGrey: #e0e0e0;
@@ -33,6 +34,17 @@ body {
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+code {
+	padding: 5px 10px;
+	position: relative;
+	color: #e22b2b;
+	border-radius: 5px;
+	margin: 10px 10px;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background-color: var(--baseDark);
 }
 
 /* Scroll Bar */

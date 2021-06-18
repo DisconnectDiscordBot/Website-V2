@@ -5,7 +5,7 @@ import { openMenu, closeMenu } from '../public/header';
 export default function Header({ page }) {
 	return (
 		<>
-			<div className={styles.container}>
+			<div className={styles.container} style={{ userSelect: 'none' }}>
 				<div className={styles.inner}>
 					<div className={styles.navbar}>
 						<Link href='/'>
@@ -130,7 +130,7 @@ export default function Header({ page }) {
 					</div>
 					<div className={styles.dash}>
 						<Link href='/dashboard'>
-							<a>Login</a>
+							<a>Dashboard</a>
 						</Link>
 					</div>
 				</div>
