@@ -68,7 +68,7 @@ export default function Commands() {
 											  ])
 									}>
 									<p className={styles.cmd}>{item.name}</p>
-									<p>-</p>
+									<p className={styles.hidden}>-</p>
 									<p>{item.desc}</p>
 								</div>
 								{shownCommands.includes(item.name) && display()}

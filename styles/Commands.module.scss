@@ -233,14 +233,30 @@
 
 	.sidebar {
 		width: 100%;
+		height: auto;
 		margin-bottom: 25px;
+
+		ul {
+			width: 100%;
+		}
+
+		ul li {
+			margin: 10px 0;
+		}
 	}
 
 	.commandHead {
 		flex-direction: column;
 	}
 
+	.cmd {
+		margin: 0px 5px;
+	}
+
 	.hidden {
 		visibility: hidden;
+		height: 0px;
+		margin: 0;
+		padding: 0;
 	}
 }
