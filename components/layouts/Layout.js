@@ -51,9 +51,9 @@ export default function Layout({ children, page }) {
 				/>
 			</Head>
 
-			<div id='stars' />
+			{/* <div id='stars' />
 			<div id='stars2' />
-			<div id='stars3' />
+			<div id='stars3' /> */}
 			<div id='content' style={{ overflow: 'hidden' }}>
 				{children}
 			</div>

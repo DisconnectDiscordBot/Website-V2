@@ -34,6 +34,22 @@ export default function Commands() {
 						return (
 							<div className={styles.commandContent}>
 								<p>{item.longDesc}</p>
+								{item.aliases && item.aliases.length ? (
+									<div className={styles.context}>
+										<p className={styles.commandTitle}>
+											Aliases
+										</p>
+										<code>{item.aliases.join(', ')}</code>
+									</div>
+								) : null}
+								{item.name !== item.usage ? (
+									<div className={styles.context}>
+										<p className={styles.commandTitle}>
+											Usage
+										</p>
+										<code>{item.usage}</code>
+									</div>
+								) : null}
 							</div>
 						);
 					}
@@ -234,7 +250,9 @@ export default function Commands() {
 									<div className={styles.title}>
 										<h2>All Commands</h2>
 									</div>
+									{displayCommands('social', false)}
 									{displayCommands('info', false)}
+									{displayCommands('mod', false)}
 									{displayCommands('utils', false)}
 								</div>
 							) : (

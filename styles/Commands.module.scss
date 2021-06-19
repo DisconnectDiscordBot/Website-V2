@@ -195,6 +195,52 @@
 			p {
 				margin: 10px 0;
 			}
+
+			.context {
+				margin: 0 0 10px 0;
+
+				.commandTitle {
+					text-transform: uppercase;
+					color: var(--textGrey);
+				}
+
+				code {
+					color: var(--textGrey);
+					margin: 10px 0 10px 0;
+					background-color: var(--baseLight);
+				}
+			}
 		}
+	}
+}
+
+@media (max-width: 1325px) {
+	.sidebar {
+		width: 20vw;
+	}
+}
+
+@media (max-width: 1025px) {
+	.sidebar {
+		width: 25vw;
+	}
+}
+
+@media (max-width: 750px) {
+	.commands {
+		flex-direction: column;
+	}
+
+	.sidebar {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+	.commandHead {
+		flex-direction: column;
+	}
+
+	.hidden {
+		visibility: hidden;
 	}
 }
