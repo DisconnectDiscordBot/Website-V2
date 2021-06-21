@@ -3,10 +3,10 @@ import styles from '../styles/Redirect.module.scss';
 import Link from 'next/link';
 import Head from 'next/head';
 
-export default function Status() {
+export default function Landing() {
 	return (
 		<>
-			<Layout page='about'>
+			<Layout page='landing'>
 				<Head>
 					<title>Disconnect • Landing</title>
 					<meta name='title' content='Disconnect • Landing' />

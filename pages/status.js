@@ -6,7 +6,7 @@ import Head from 'next/head';
 export default function Status() {
 	return (
 		<>
-			<Layout page='about'>
+			<Layout page='status'>
 				<Head>
 					<title>Disconnect • Status</title>
 					<meta name='title' content='Disconnect • Status' />

@@ -3,10 +3,10 @@ import styles from '../styles/Redirect.module.scss';
 import Head from 'next/head';
 import Link from 'next/link';
 
-export default function Invite() {
+export default function Vote() {
 	return (
 		<>
-			<Layout page='invite'>
+			<Layout page='vote'>
 				<Head>
 					<meta
 						http-equiv='Refresh'

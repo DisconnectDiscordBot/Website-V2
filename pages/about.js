@@ -3,7 +3,7 @@ import styles from '../styles/About.module.scss';
 import Link from 'next/link';
 import Head from 'next/head';
 
-export default function Home() {
+export default function About() {
 	return (
 		<>
 			<Layout page='about'>
