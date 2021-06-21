@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import '../styles/globals.css';
-import { AuthProvider } from '../auth';
+// import { AuthProvider } from '../auth';
 
 export default function LoadApp({ Component, pageProps }) {
 	return (
@@ -13,9 +13,9 @@ export default function LoadApp({ Component, pageProps }) {
 					href='./assets/disconnectLogo.png'
 				/>
 			</Head>
-			<AuthProvider>
-				<Component {...pageProps} />
-			</AuthProvider>
+			{/* <AuthProvider> */}
+			<Component {...pageProps} />
+			{/* </AuthProvider> */}
 		</>
 	);
 }
