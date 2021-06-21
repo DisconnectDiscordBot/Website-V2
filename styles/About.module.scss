@@ -1,0 +1,251 @@
+.container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.inner,
+.innerTop {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin: 25px;
+	color: #ffffff;
+	border-radius: 1rem;
+
+	h2 {
+		width: 40%;
+		font-size: 1.65vw;
+		text-align: center;
+		border-bottom: 1px #ffffff solid;
+		margin-bottom: 10px;
+	}
+
+	p {
+		width: 80%;
+		font-size: 1.1vw;
+		text-align: center;
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		list-style: decimal;
+		margin-top: 10px;
+
+		li {
+			margin: 5px;
+			width: auto;
+			font-size: 1.1vw;
+
+			a {
+				color: var(--secondary);
+				transition: all 0.5s ease;
+
+				&:hover {
+					color: var(--primary);
+				}
+			}
+		}
+	}
+}
+
+.innerTop {
+	margin-top: 125px;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 25%;
+	padding: 25px;
+	border-radius: 1.5rem;
+	background-color: var(--baseDark);
+
+	.username {
+		margin: 15px 0;
+		margin-bottom: 5px;
+		font-size: 1.5vw;
+	}
+
+	.position {
+		font-size: 0.9vw;
+		text-transform: uppercase;
+	}
+
+	.bio {
+		margin: 5px;
+		font-size: 1vw;
+	}
+
+	img {
+		width: 75%;
+		border-radius: 50%;
+	}
+
+	.links {
+		width: 100%;
+
+		ul {
+			width: 100%;
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+
+			li {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 15%;
+			}
+
+			img {
+				border-radius: 0;
+				width: 25vw;
+
+				filter: invert(39%) sepia(73%) saturate(7263%)
+					hue-rotate(329deg) brightness(99%) contrast(105%);
+				transition: all 0.5s ease;
+
+				&:hover {
+					filter: invert(55%) sepia(97%) saturate(4015%)
+						hue-rotate(331deg) brightness(107%) contrast(103%);
+				}
+			}
+		}
+	}
+}
+
+.buttons {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	a {
+		margin: 10px 10px 0 0;
+
+		padding: 10px 20px;
+		border-radius: 5px;
+		font-weight: bold;
+		font-size: 1rem;
+		letter-spacing: 0.5px;
+		background-color: var(--primary);
+		position: relative;
+		transition: all 0.5s ease;
+
+		&:hover {
+			background-color: var(--secondary);
+			box-shadow: 0px 5px 10px #ff52525b;
+		}
+	}
+}
+
+@media (max-width: 1250px) {
+	.innerTop {
+		margin: 25px;
+	}
+
+	.inner,
+	.innerTop {
+		h2 {
+			width: 60%;
+			font-size: 2.15vw;
+		}
+
+		p,
+		a,
+		ul li {
+			font-size: 1.6vw;
+		}
+	}
+
+	.card {
+		width: 40%;
+
+		.username {
+			font-size: 2vw;
+		}
+
+		.position {
+			font-size: 1.4vw;
+		}
+
+		.bio {
+			font-size: 1.5vw;
+		}
+	}
+}
+
+@media (max-width: 675px) {
+	.inner,
+	.innerTop {
+		h2 {
+			width: 60%;
+			font-size: 3.15vw;
+		}
+
+		p,
+		a,
+		ul li {
+			font-size: 2.6vw;
+		}
+	}
+
+	.card {
+		width: 60%;
+
+		.username {
+			font-size: 3vw;
+		}
+
+		.position {
+			font-size: 2.4vw;
+		}
+
+		.bio {
+			font-size: 2.5vw;
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.inner,
+	.innerTop {
+		h2 {
+			width: 60%;
+			font-size: 4.15vw;
+		}
+
+		p,
+		a,
+		ul li {
+			font-size: 3.6vw;
+		}
+	}
+
+	.card {
+		width: 80%;
+
+		.username {
+			font-size: 4vw;
+		}
+
+		.position {
+			font-size: 3.4vw;
+		}
+
+		.bio {
+			font-size: 3.5vw;
+		}
+	}
+}

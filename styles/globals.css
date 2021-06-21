@@ -1408,7 +1408,7 @@ body::-webkit-scrollbar-thumb:hover {
 		transform: translateY(0px);
 	}
 	to {
-		transform: translateY(-2000px);
+		transform: translateY(100vh);
 	}
 }
 

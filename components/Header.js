@@ -55,6 +55,24 @@ export default function Header({ page }) {
 								</Link>
 							</li>
 							<li>
+								<Link href='/about'>
+									<div className={styles.icon}>
+										<img
+											className={
+												page === 'about'
+													? styles.activeFeather
+													: styles.feather
+											}
+											src='/assets/icons/book.svg'
+											alt='About Icon'
+										/>
+										<span className={styles.iconText}>
+											About
+										</span>
+									</div>
+								</Link>
+							</li>
+							<li>
 								<Link href='/support'>
 									<div className={styles.icon}>
 										<img
@@ -200,6 +218,22 @@ export default function Header({ page }) {
 											alt='Commands Icon'
 										/>
 										<p>Commands</p>
+									</div>
+								</Link>
+							</li>
+							<li>
+								<Link href='/about'>
+									<div className={styles.group}>
+										<img
+											className={
+												page === 'about'
+													? styles.activeFeather
+													: styles.feather
+											}
+											src='/assets/icons/book.svg'
+											alt='About Icon'
+										/>
+										<p>About</p>
 									</div>
 								</Link>
 							</li>

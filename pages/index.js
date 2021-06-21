@@ -2,7 +2,7 @@ import Layout from '../components/layouts/Layout';
 import styles from '../styles/Home.module.scss';
 import Link from 'next/link';
 
-export default function Home() {
+export default function Home({ servers, members, channels }) {
 	return (
 		<>
 			<Layout page='home'>
@@ -60,11 +60,11 @@ export default function Home() {
 									<p className={styles.description}>
 										Unlock Disconnect's high quality music
 										coming from multiple sources, filtered
-										with any filters with your own custom
-										playlists.
+										with any filters.
+										{/* with your own custom playlists. */}
 									</p>
 								</div>
-								<div className={styles.feature}>
+								{/* <div className={styles.feature}>
 									<img
 										className={styles.feather}
 										src='/assets/icons/dollar-sign.svg'
@@ -75,7 +75,7 @@ export default function Home() {
 										Buy things, trade with other, play games
 										and reward active members.
 									</p>
-								</div>
+								</div> */}
 								{/* <div className={styles.feature}>
 									<img
 										className={styles.feather}
@@ -106,7 +106,8 @@ export default function Home() {
 									/>
 									<p className={styles.title}>Welcoming</p>
 									<p className={styles.description}>
-										Feature Description
+										Quickly engage and welcome members to
+										your server without even being there.
 									</p>
 								</div>
 								{/* <div className={styles.feature}>
@@ -122,7 +123,7 @@ export default function Home() {
 										Feature Description
 									</p>
 								</div> */}
-								<div className={styles.feature}>
+								{/* <div className={styles.feature}>
 									<img
 										className={styles.feather}
 										src='/assets/icons/star.svg'
@@ -134,7 +135,7 @@ export default function Home() {
 										suggestions, polls, giveaways, would
 										your rather and more...
 									</p>
-								</div>
+								</div> */}
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
@@ -161,7 +162,7 @@ export default function Home() {
 										updates from your server.
 									</p>
 								</div>
-								<div className={styles.feature}>
+								{/* <div className={styles.feature}>
 									<div className={styles.final}>
 										<img
 											className={styles.feather}
@@ -172,14 +173,16 @@ export default function Home() {
 											and More...
 										</p>
 										<p className={styles.description}>
+											Show images of animals, roleplay a
+											little bit... and much more.
 											Some of the things Disconnect does
 											is hard to mention. Stuff like
 											custom commands, reminders, mocking,
 											and many others are all avalible to
-											use.
+											use. 
 										</p>
 									</div>
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>
@@ -203,7 +206,11 @@ export default function Home() {
 										src='/assets/icons/server.svg'
 										alt='Servers Icon'
 									/>
-									<p className={styles.num}>272</p>
+									<p className={styles.num}>
+										{servers
+											? servers.toLocaleString()
+											: 'Loading...'}
+									</p>
 									<p className={styles.title}>Servers</p>
 								</div>
 								<div className={styles.feature}>
@@ -212,7 +219,11 @@ export default function Home() {
 										src='/assets/icons/users.svg'
 										alt='Welcoming Icon'
 									/>
-									<p className={styles.num}>254,768</p>
+									<p className={styles.num}>
+										{members
+											? members.toLocaleString()
+											: 'Loading...'}
+									</p>
 									<p className={styles.title}>Users</p>
 								</div>
 								<div className={styles.feature}>
@@ -221,7 +232,11 @@ export default function Home() {
 										src='/assets/icons/list.svg'
 										alt='Welcoming Icon'
 									/>
-									<p className={styles.num}>2,654</p>
+									<p className={styles.num}>
+										{channels
+											? channels.toLocaleString()
+											: 'Loading...'}
+									</p>
 									<p className={styles.title}>Channels</p>
 								</div>
 							</div>
@@ -265,4 +280,17 @@ export default function Home() {
 			</Layout>
 		</>
 	);
+}
+
+export async function getStaticProps() {
+	// const res = await fetch('http://localhost:3000/api/stats');
+	// const stats = await res.json();
+
+	return {
+		props: {
+			servers: 276,
+			channels: 12504,
+			members: 103425,
+		},
+	};
 }

@@ -19,6 +19,7 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"discord.js": "^12.5.3",
 		"firebase": "^8.6.3",
 		"firebase-admin": "^9.9.0",
 		"fs": "*",

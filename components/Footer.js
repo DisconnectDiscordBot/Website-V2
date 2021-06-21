@@ -10,7 +10,7 @@ export default function Footer() {
 					<p>Copyright © 2021 Disconnect</p>
 				</div>
 				<div className={styles.links}>
-					<Link href='/terms'>
+					<Link href='/about'>
 						<a>Terms of Service</a>
 					</Link>
 				</div>

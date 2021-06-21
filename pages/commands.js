@@ -34,22 +34,26 @@ export default function Commands() {
 						return (
 							<div className={styles.commandContent}>
 								<p>{item.longDesc}</p>
-								{item.aliases && item.aliases.length ? (
-									<div className={styles.context}>
-										<p className={styles.commandTitle}>
-											Aliases
-										</p>
-										<code>{item.aliases.join(', ')}</code>
-									</div>
-								) : null}
-								{item.name !== item.usage ? (
-									<div className={styles.context}>
-										<p className={styles.commandTitle}>
-											Usage
-										</p>
-										<code>{item.usage}</code>
-									</div>
-								) : null}
+								<div className={styles.context}>
+									{item.aliases && item.aliases.length ? (
+										<div className={styles.innerContext}>
+											<p className={styles.commandTitle}>
+												Aliases
+											</p>
+											<code>
+												{item.aliases.join(', ')}
+											</code>
+										</div>
+									) : null}
+									{item.name !== item.usage ? (
+										<div className={styles.innerContext}>
+											<p className={styles.commandTitle}>
+												Usage
+											</p>
+											<code>{item.usage}</code>
+										</div>
+									) : null}
+								</div>
 							</div>
 						);
 					}
@@ -128,7 +132,9 @@ export default function Commands() {
 								<code>{'<required>'}</code>
 								<code>{'[optional]'}</code>
 								<code>{'<Select || One>'}</code>
-								<code>{'★ is a Premium Command'}</code>
+								<code>
+									{'★ is a Premium Command (Coming Soon!)'}
+								</code>
 								<code>{'⚙ is a Configurable Command'}</code>
 							</div>
 						</div>
@@ -140,10 +146,22 @@ export default function Commands() {
 						<div className={styles.sidebar}>
 							<h2>Categories</h2>
 							<ul>
-								<li onClick={() => setActive('all')}>
+								<li
+									className={
+										activeCategory === 'all'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('all')}>
 									<code>{numberOfCommands}</code> All
 								</li>
-								<li onClick={() => setActive('fun')}>
+								<li
+									className={
+										activeCategory === 'fun'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('fun')}>
 									<code>
 										{categories.get('fun')
 											? categories.get('fun')
@@ -151,7 +169,13 @@ export default function Commands() {
 									</code>{' '}
 									Fun
 								</li>
-								<li onClick={() => setActive('games')}>
+								<li
+									className={
+										activeCategory === 'games'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('games')}>
 									<code>
 										{categories.get('games')
 											? categories.get('games')
@@ -159,7 +183,13 @@ export default function Commands() {
 									</code>{' '}
 									Games
 								</li>
-								<li onClick={() => setActive('music')}>
+								<li
+									className={
+										activeCategory === 'music'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('music')}>
 									<code>
 										{categories.get('music')
 											? categories.get('music')
@@ -169,7 +199,13 @@ export default function Commands() {
 								</li>
 								{/* <li><code>10</code> Economy</li>
 								<li><code>10</code> Leveling</li> */}
-								<li onClick={() => setActive('social')}>
+								<li
+									className={
+										activeCategory === 'social'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('social')}>
 									<code>
 										{categories.get('social')
 											? categories.get('social')
@@ -177,7 +213,13 @@ export default function Commands() {
 									</code>{' '}
 									Social
 								</li>
-								<li onClick={() => setActive('images')}>
+								<li
+									className={
+										activeCategory === 'images'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('images')}>
 									<code>
 										{categories.get('images')
 											? categories.get('images')
@@ -185,7 +227,13 @@ export default function Commands() {
 									</code>{' '}
 									Imagery
 								</li>
-								<li onClick={() => setActive('rp')}>
+								<li
+									className={
+										activeCategory === 'rp'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('rp')}>
 									<code>
 										{categories.get('rp')
 											? categories.get('rp')
@@ -193,7 +241,13 @@ export default function Commands() {
 									</code>{' '}
 									Roleplay
 								</li>
-								<li onClick={() => setActive('info')}>
+								<li
+									className={
+										activeCategory === 'info'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('info')}>
 									<code>
 										{categories.get('info')
 											? categories.get('info')
@@ -201,15 +255,27 @@ export default function Commands() {
 									</code>{' '}
 									Information
 								</li>
-								<li onClick={() => setActive('stats')}>
+								{/* <li
+									className={
+										activeCategory === 'stats'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('stats')}>
 									<code>
 										{categories.get('stats')
 											? categories.get('stats')
 											: 0}
 									</code>{' '}
 									Statistics
-								</li>
-								<li onClick={() => setActive('mod')}>
+								</li> */}
+								<li
+									className={
+										activeCategory === 'mod'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('mod')}>
 									<code>
 										{categories.get('mod')
 											? categories.get('mod')
@@ -217,7 +283,13 @@ export default function Commands() {
 									</code>{' '}
 									Moderation
 								</li>
-								<li onClick={() => setActive('utils')}>
+								<li
+									className={
+										activeCategory === 'utils'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('utils')}>
 									<code>
 										{categories.get('utils')
 											? categories.get('utils')
@@ -225,15 +297,27 @@ export default function Commands() {
 									</code>{' '}
 									Utility
 								</li>
-								<li onClick={() => setActive('misc')}>
+								{/* <li
+									className={
+										activeCategory === 'misc'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('misc')}>
 									<code>
 										{categories.get('misc')
 											? categories.get('misc')
 											: 0}
 									</code>{' '}
 									Misc
-								</li>
-								<li onClick={() => setActive('nsfw')}>
+								</li> */}
+								<li
+									className={
+										activeCategory === 'nsfw'
+											? styles.active
+											: null
+									}
+									onClick={() => setActive('nsfw')}>
 									<code>
 										{categories.get('nsfw')
 											? categories.get('nsfw')
@@ -250,10 +334,17 @@ export default function Commands() {
 									<div className={styles.title}>
 										<h2>All Commands</h2>
 									</div>
+									{displayCommands('fun', false)}
+									{displayCommands('games', false)}
+									{displayCommands('music', false)}
 									{displayCommands('social', false)}
+									{displayCommands('images', false)}
+									{displayCommands('rp', false)}
 									{displayCommands('info', false)}
+									{/* {displayCommands('stats', false)} */}
 									{displayCommands('mod', false)}
 									{displayCommands('utils', false)}
+									{/* {displayCommands('misc', false)} */}
 								</div>
 							) : (
 								displayCommands(activeCategory, true)
