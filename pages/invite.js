@@ -10,7 +10,7 @@ export default function Invite() {
 				<Head>
 					<meta
 						http-equiv='Refresh'
-						content="0.5; url='https://discord.com/oauth2/authorize?client_id=576160626095685632&permissions=3203787894&scope=bot%20applications.commands'"
+						content="0.5; url='https://discord.com/api/oauth2/authorize?client_id=576160626095685632&permissions=3203787894&scope=bot%20applications.commands&response_type=code&redirect_uri=https://disconnectbot.com/landing'"
 					/>
 					<title>Disconnect • Invite</title>
 					<meta name='title' content='Disconnect • Invite' />
@@ -45,7 +45,7 @@ export default function Invite() {
 							If you are not redirected within 5 seconds please
 							click the button below...
 						</p>
-						<Link href='https://discord.com/oauth2/authorize?client_id=576160626095685632&permissions=3203787894&scope=bot%20applications.commands'>
+						<Link href='https://discord.com/api/oauth2/authorize?client_id=576160626095685632&permissions=3203787894&scope=bot%20applications.commands&response_type=code&redirect_uri=https://disconnectbot.com/landing'>
 							<a>Invite Disconnect</a>
 						</Link>
 					</div>
