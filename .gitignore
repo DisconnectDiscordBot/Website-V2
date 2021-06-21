@@ -41,7 +41,6 @@ ideas-notes/
 .vscode
 *.ini
 *.example
-*.ico
 
 # Logs
 logs/
