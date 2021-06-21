@@ -100,7 +100,7 @@ export default function Commands() {
 					<title>Disconnect • Commands</title>
 					<meta
 						property='og:url'
-						content='https://disconnectbot.vercel.app/commands'
+						content='https://www.disconnectbot.com/commands'
 					/>
 					<meta name='title' content='Disconnect • Commands' />
 					<meta
@@ -114,7 +114,7 @@ export default function Commands() {
 					/>
 					<meta
 						property='twitter:url'
-						content='https://disconnectbot.vercel.app/commands'
+						content='https://www.disconnectbot.com/commands'
 					/>
 					<meta
 						property='twitter:title'

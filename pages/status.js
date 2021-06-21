@@ -16,7 +16,7 @@ export default function Status() {
 					/>
 					<meta
 						property='og:url'
-						content='https://disconnectbot.vercel.app/status'
+						content='https://www.disconnectbot.com/status'
 					/>
 					<meta property='og:title' content='Disconnect • Status' />
 					<meta
@@ -25,7 +25,7 @@ export default function Status() {
 					/>
 					<meta
 						property='twitter:url'
-						content='https://disconnectbot.vercel.app/status'
+						content='https://www.disconnectbot.com/status'
 					/>
 					<meta
 						property='twitter:title'

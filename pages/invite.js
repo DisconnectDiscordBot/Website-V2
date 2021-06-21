@@ -17,7 +17,7 @@ export default function Invite() {
 					<meta name='description' content='Invite Disconnect.' />
 					<meta
 						property='og:url'
-						content='https://disconnectbot.vercel.app/invite'
+						content='https://www.disconnectbot.com/invite'
 					/>
 					<meta property='og:title' content='Disconnect • Invite' />
 					<meta
@@ -26,7 +26,7 @@ export default function Invite() {
 					/>
 					<meta
 						property='twitter:url'
-						content='https://disconnectbot.vercel.app/invite'
+						content='https://www.disconnectbot.com/invite'
 					/>
 					<meta
 						property='twitter:title'

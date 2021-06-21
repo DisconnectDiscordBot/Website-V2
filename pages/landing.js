@@ -16,7 +16,7 @@ export default function Landing() {
 					/>
 					<meta
 						property='og:url'
-						content='https://disconnectbot.vercel.app/landing'
+						content='https://www.disconnectbot.com/landing'
 					/>
 					<meta property='og:title' content='Disconnect • Landing' />
 					<meta
@@ -25,7 +25,7 @@ export default function Landing() {
 					/>
 					<meta
 						property='twitter:url'
-						content='https://disconnectbot.vercel.app/landing'
+						content='https://www.disconnectbot.com/landing'
 					/>
 					<meta
 						property='twitter:title'

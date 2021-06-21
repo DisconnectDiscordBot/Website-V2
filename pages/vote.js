@@ -17,7 +17,7 @@ export default function Vote() {
 					<meta name='description' content='Vote for Disconnect.' />
 					<meta
 						property='og:url'
-						content='https://disconnectbot.vercel.app/vote'
+						content='https://www.disconnectbot.com/vote'
 					/>
 					<meta property='og:title' content='Disconnect • Vote' />
 					<meta
@@ -26,7 +26,7 @@ export default function Vote() {
 					/>
 					<meta
 						property='twitter:url'
-						content='https://disconnectbot.vercel.app/vote'
+						content='https://www.disconnectbot.com/vote'
 					/>
 					<meta
 						property='twitter:title'

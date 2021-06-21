@@ -16,7 +16,7 @@ export default function About() {
 					/>
 					<meta
 						property='og:url'
-						content='https://disconnectbot.vercel.app/about'
+						content='https://www.disconnectbot.com/about'
 					/>
 					<meta property='og:title' content='Disconnect • About' />
 					<meta
@@ -25,7 +25,7 @@ export default function About() {
 					/>
 					<meta
 						property='twitter:url'
-						content='https://disconnectbot.vercel.app/about'
+						content='https://www.disconnectbot.com/about'
 					/>
 					<meta
 						property='twitter:title'

@@ -20,7 +20,7 @@ export default function Support() {
 					/>
 					<meta
 						property='og:url'
-						content='https://disconnectbot.vercel.app/support'
+						content='https://www.disconnectbot.com/support'
 					/>
 					<meta property='og:title' content='Disconnect • Support' />
 					<meta
@@ -29,7 +29,7 @@ export default function Support() {
 					/>
 					<meta
 						property='twitter:url'
-						content='https://disconnectbot.vercel.app/support'
+						content='https://www.disconnectbot.com/support'
 					/>
 					<meta
 						property='twitter:title'

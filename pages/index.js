@@ -19,7 +19,7 @@ export default function Home({ servers, members, channels }) {
 					/>
 					<meta
 						property='og:url'
-						content='https://disconnectbot.vercel.app/'
+						content='https://www.disconnectbot.com/'
 					/>
 					<meta
 						property='og:title'
@@ -31,7 +31,7 @@ export default function Home({ servers, members, channels }) {
 					/>
 					<meta
 						property='twitter:url'
-						content='https://disconnectbot.vercel.app/'
+						content='https://www.disconnectbot.com/'
 					/>
 					<meta
 						property='twitter:title'
