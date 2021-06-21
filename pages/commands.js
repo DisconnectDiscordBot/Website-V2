@@ -25,9 +25,18 @@ export default function Commands() {
 		return (
 			<div className={styles.spread}>
 				{title && (
-					<div className={styles.title}>
-						<h2>{categoryTranslation[category]} Commands</h2>
-					</div>
+					<>
+						<div className={styles.controls}>
+							<code>
+								{categories.get(category)
+									? categories.get(category)
+									: 0}
+							</code>
+						</div>
+						<div className={styles.title}>
+							<h2>{categoryTranslation[category]} Commands</h2>
+						</div>
+					</>
 				)}
 				{commands[category].map((item) => {
 					function display() {
@@ -158,7 +167,7 @@ export default function Commands() {
 											: null
 									}
 									onClick={() => setActive('all')}>
-									<code>{numberOfCommands}</code> All
+									All
 								</li>
 								<li
 									className={
@@ -167,11 +176,6 @@ export default function Commands() {
 											: null
 									}
 									onClick={() => setActive('fun')}>
-									<code>
-										{categories.get('fun')
-											? categories.get('fun')
-											: 0}
-									</code>{' '}
 									Fun
 								</li>
 								<li
@@ -181,11 +185,6 @@ export default function Commands() {
 											: null
 									}
 									onClick={() => setActive('games')}>
-									<code>
-										{categories.get('games')
-											? categories.get('games')
-											: 0}
-									</code>{' '}
 									Games
 								</li>
 								<li
@@ -195,11 +194,6 @@ export default function Commands() {
 											: null
 									}
 									onClick={() => setActive('music')}>
-									<code>
-										{categories.get('music')
-											? categories.get('music')
-											: 0}
-									</code>{' '}
 									Music
 								</li>
 								{/* <li><code>10</code> Economy</li>
@@ -211,11 +205,6 @@ export default function Commands() {
 											: null
 									}
 									onClick={() => setActive('social')}>
-									<code>
-										{categories.get('social')
-											? categories.get('social')
-											: 0}
-									</code>{' '}
 									Social
 								</li>
 								<li
@@ -225,11 +214,6 @@ export default function Commands() {
 											: null
 									}
 									onClick={() => setActive('images')}>
-									<code>
-										{categories.get('images')
-											? categories.get('images')
-											: 0}
-									</code>{' '}
 									Imagery
 								</li>
 								<li
@@ -239,11 +223,6 @@ export default function Commands() {
 											: null
 									}
 									onClick={() => setActive('rp')}>
-									<code>
-										{categories.get('rp')
-											? categories.get('rp')
-											: 0}
-									</code>{' '}
 									Roleplay
 								</li>
 								<li
@@ -253,11 +232,6 @@ export default function Commands() {
 											: null
 									}
 									onClick={() => setActive('info')}>
-									<code>
-										{categories.get('info')
-											? categories.get('info')
-											: 0}
-									</code>{' '}
 									Information
 								</li>
 								{/* <li
@@ -281,11 +255,6 @@ export default function Commands() {
 											: null
 									}
 									onClick={() => setActive('mod')}>
-									<code>
-										{categories.get('mod')
-											? categories.get('mod')
-											: 0}
-									</code>{' '}
 									Moderation
 								</li>
 								<li
@@ -295,11 +264,6 @@ export default function Commands() {
 											: null
 									}
 									onClick={() => setActive('utils')}>
-									<code>
-										{categories.get('utils')
-											? categories.get('utils')
-											: 0}
-									</code>{' '}
 									Utility
 								</li>
 								{/* <li
@@ -323,11 +287,6 @@ export default function Commands() {
 											: null
 									}
 									onClick={() => setActive('nsfw')}>
-									<code>
-										{categories.get('nsfw')
-											? categories.get('nsfw')
-											: 0}
-									</code>{' '}
 									NSFW
 								</li>
 							</ul>
@@ -336,6 +295,9 @@ export default function Commands() {
 							{activeCategory === 'all' ||
 							!commands[activeCategory] ? (
 								<div className={styles.spread}>
+									<div className={styles.controls}>
+										<code>{numberOfCommands}</code>
+									</div>
 									<div className={styles.title}>
 										<h2>All Commands</h2>
 									</div>

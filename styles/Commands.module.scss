@@ -132,10 +132,6 @@
 
 .content {
 	width: 100%;
-}
-
-.content {
-	width: 100%;
 	display: flex;
 	padding: 25px;
 	border-radius: 1rem;
@@ -162,6 +158,12 @@
 		justify-content: center;
 		flex-direction: column;
 	}
+}
+
+.controls {
+	position: relative;
+	top: 25px;
+	right: -45%;
 }
 
 .cmds {
@@ -247,6 +249,16 @@
 	.information {
 		margin: 50px 0;
 	}
+
+	.title {
+		margin-bottom: 50px;
+	}
+
+	.controls {
+		position: relative;
+		top: 75px;
+		right: 0%;
+	}
 }
 
 @media (max-width: 750px) {
@@ -261,10 +273,6 @@
 
 		ul {
 			width: 100%;
-		}
-
-		ul li {
-			margin: 10px 0;
 		}
 	}
 
@@ -281,5 +289,25 @@
 		height: 0px;
 		margin: 0;
 		padding: 0;
+	}
+}
+
+@media (max-width: 470px) {
+	.content h2 {
+		font-size: 1.15rem;
+	}
+
+	.controls {
+		position: relative;
+		top: 70px;
+		right: 0%;
+	}
+}
+
+@media (max-width: 310px) {
+	.controls {
+		position: relative;
+		top: 95px;
+		right: 0%;
 	}
 }
