@@ -125,7 +125,7 @@ export default function About() {
 					<div className={styles.inner}>
 						<h2>Quick Mentions</h2>
 						<div className={styles.buttons}>
-							<Link href='/faq'>
+							{/* <Link href='/faq'>
 								<a>Frequently Asked Questions</a>
 							</Link>
 							<Link href='/changelog'>
@@ -133,7 +133,7 @@ export default function About() {
 							</Link>
 							<Link href='/docs'>
 								<a>View the Documentation</a>
-							</Link>
+							</Link> */}
 							<Link href='/invite'>
 								<a>Invite Disconnect</a>
 							</Link>
