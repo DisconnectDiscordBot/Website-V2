@@ -8,7 +8,7 @@ export default function Status() {
 		<>
 			<Layout page='about'>
 				<Head>
-					<title>Disconnect • Status</title>
+					<title>Disconnect • Landing</title>
 					<meta name='title' content='Disconnect • Landing' />
 					<meta
 						name='description'
