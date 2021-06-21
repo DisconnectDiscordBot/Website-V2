@@ -93,10 +93,15 @@ export default function Commands() {
 						property='og:url'
 						content='https://disconnectbot.vercel.app/commands'
 					/>
+					<meta name='title' content='Disconnect • Commands' />
+					<meta
+						name='description'
+						content='The full command list for Disconnect the Discord bot.'
+					/>
 					<meta property='og:title' content='Disconnect • Commands' />
 					<meta
 						property='og:description'
-						content='Disconnect is an entertainment first Discord bot with over 100+ commands.'
+						content='The full command list for Disconnect the Discord bot'
 					/>
 					<meta
 						property='twitter:url'
@@ -108,7 +113,7 @@ export default function Commands() {
 					/>
 					<meta
 						property='twitter:description'
-						content='Disconnect is an entertainment first Discord bot with over 100+ commands.'
+						content='The full command list for Disconnect the Discord bot'
 					/>
 				</Head>
 

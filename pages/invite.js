@@ -13,6 +13,8 @@ export default function Invite() {
 						content="0.5; url='https://discord.com/oauth2/authorize?client_id=576160626095685632&permissions=3203787894&scope=bot%20applications.commands'"
 					/>
 					<title>Disconnect • Invite</title>
+					<meta name='title' content='Disconnect • Invite' />
+					<meta name='description' content='Invite Disconnect.' />
 					<meta
 						property='og:url'
 						content='https://disconnectbot.vercel.app/invite'

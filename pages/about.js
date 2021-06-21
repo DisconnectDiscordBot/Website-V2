@@ -9,6 +9,11 @@ export default function Home() {
 			<Layout page='about'>
 				<Head>
 					<title>Disconnect • About</title>
+					<meta name='title' content='Disconnect • About' />
+					<meta
+						name='description'
+						content='Disconnect is a fully functional Discord bot for all of your entertainment needs. Disconnect was started two years ago, around June of 2019. Since then...'
+					/>
 					<meta
 						property='og:url'
 						content='https://disconnectbot.vercel.app/about'

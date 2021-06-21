@@ -13,6 +13,8 @@ export default function Invite() {
 						content="0.5; url='https://top.gg/bot/576160626095685632/vote'"
 					/>
 					<title>Disconnect • Invite</title>
+					<meta name='title' content='Disconnect • Invite' />
+					<meta name='description' content='Vote for Disconnect.' />
 					<meta
 						property='og:url'
 						content='https://disconnectbot.vercel.app/vote'

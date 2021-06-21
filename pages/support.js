@@ -13,6 +13,11 @@ export default function Support() {
 						content="0.5; url='https://discord.gg/gFJasaP5bf'"
 					/>
 					<title>Disconnect • Support</title>
+					<meta name='title' content='Disconnect • Support' />
+					<meta
+						name='description'
+						content='Join the Disconnect Support Server.'
+					/>
 					<meta
 						property='og:url'
 						content='https://disconnectbot.vercel.app/support'
