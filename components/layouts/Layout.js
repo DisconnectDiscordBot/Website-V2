@@ -15,8 +15,24 @@ export default function Layout({ children, page }) {
 				<meta property='twitter:card' content='summary_large_image' />
 				<meta
 					property='twitter:image'
-					content='https://disconnectbot.vercel.app/assets/cover.png'
+					content='https://disconnectbot.com/assets/cover.png'
 				/>
+				<meta
+					name='keywords'
+					content='Disconnect, Disconnect Bot, Discord Bot, Disconnect Discord Bot, Top.gg, Music Bot Bot, Music, Entertainment, Entertainment Bot, Entertainment Discord Bot, YouTube, Spotify, Soundcloud, Radio, Always online'
+				/>
+				<link
+					rel='icon'
+					type='image/png'
+					href='https://disconnectbot.com/disconnect.png'
+				/>
+				<link
+					rel='apple-touch-icon'
+					type='image/png'
+					href='https://disconnectbot.com/assets/disconnectLogo.png'
+				/>
+				<meta rel='canonical' href='https://disconnectbot.com' />
+				<link rel='canonical' href='https://disconnectbot.com' />
 			</Head>
 
 			{/* <div id='stars' />

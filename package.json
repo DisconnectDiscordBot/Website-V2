@@ -5,10 +5,10 @@
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/DisconnectDiscordBot/Website.git"
+		"url": "git+https://github.com/DevCytech/Website.git"
 	},
 	"bugs": {
-		"url": "https://github.com/DevCytech/DisconnectDiscordBot/Website"
+		"url": "https://github.com/DevCytech/Website"
 	},
 	"homepage": "https://disconnectbot.com/",
 	"description": "The offical website for the Disconnect discord bot.",
@@ -19,18 +19,16 @@
 		"start": "next start"
 	},
 	"dependencies": {
-		"discord.js": "^12.5.3",
+		"axios": "^0.21.1",
 		"firebase": "^8.6.3",
 		"firebase-admin": "^9.9.0",
-		"fs": "*",
-		"googleapis": "^74.2.0",
+		"js-cookie": "^2.2.1",
 		"mongoose": "^5.12.12",
 		"next": "10.2.3",
-		"query-string": "^7.0.0",
+		"query-string": "^7.0.1",
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
-		"sass": "^1.35.1",
-		"superagent": "^6.1.0"
+		"sass": "^1.35.1"
 	},
 	"devDependencies": {
 		"eslint": "^7.19.0"
