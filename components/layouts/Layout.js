@@ -31,6 +31,7 @@ export default function Layout({ children, page }) {
 					type='image/png'
 					href='https://disconnectbot.com/assets/disconnectLogo.png'
 				/>
+				<meta name='og:site_name' content='Disconnect' />
 				<meta rel='canonical' href='https://disconnectbot.com' />
 				<link rel='canonical' href='https://disconnectbot.com' />
 			</Head>
