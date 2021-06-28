@@ -78,7 +78,7 @@ export default function Sidebar({ page }) {
 									}
 									alt='Dashboard icon'
 								/>
-								<p className={styles.show}>Dashboard</p>
+								<p className={styles.show}>Module Gallery</p>
 							</div>
 						</Link>
 					</li>
@@ -114,8 +114,91 @@ export default function Sidebar({ page }) {
 							</div>
 						</Link>
 					</li>
+					<li>
+						<div className={styles.divider} />
+					</li>
 					{/* <li>Levels</li>
 					<li>Economy</li> */}
+					<li>
+						<Link href='/dashboard/1/music'>
+							<div className={styles.iconButton}>
+								<img
+									src='../../assets/icons/music.svg'
+									className={
+										page === 'music' ? styles.active : null
+									}
+									alt='Music icon'
+								/>
+								<p className={styles.show}>Music</p>
+							</div>
+						</Link>
+					</li>
+					<li>
+						<Link href='/dashboard/1/roleplay'>
+							<div className={styles.iconButton}>
+								<img
+									src='../../assets/icons/users.svg'
+									className={
+										page === 'rp' ? styles.active : null
+									}
+									alt='Roleplay icon'
+								/>
+								<p className={styles.show}>Roleplay</p>
+							</div>
+						</Link>
+					</li>
+					<li>
+						<Link href='/dashboard/1/images'>
+							<div className={styles.iconButton}>
+								<img
+									src='../../assets/icons/camera.svg'
+									className={
+										page === 'images' ? styles.active : null
+									}
+									alt='Imagery icon'
+								/>
+								<p className={styles.show}>Imagery</p>
+							</div>
+						</Link>
+					</li>
+					<li>
+						<div className={styles.divider} />
+					</li>
+					<li>
+						<Link href='/dashboard/1/youtube'>
+							<div className={styles.iconButton}>
+								<img
+									src='../../assets/icons/youtube.svg'
+									className={
+										page === 'youtube'
+											? styles.active
+											: null
+									}
+									alt='YouTube icon'
+								/>
+								<p className={styles.show}>YouTube Notifier</p>
+							</div>
+						</Link>
+					</li>
+					<li>
+						<Link href='/dashboard/1/twitter'>
+							<div className={styles.iconButton}>
+								<img
+									src='../../assets/icons/twitter.svg'
+									className={
+										page === 'twitter'
+											? styles.active
+											: null
+									}
+									alt='Twitter icon'
+								/>
+								<p className={styles.show}>Twitter Notifier</p>
+							</div>
+						</Link>
+					</li>
+					<li>
+						<div className={styles.divider} />
+					</li>
 					<li>
 						<Link href='/dashboard/1/welcome'>
 							<div className={styles.iconButton}>
@@ -145,6 +228,9 @@ export default function Sidebar({ page }) {
 								<p className={styles.show}>Moderation</p>
 							</div>
 						</Link>
+					</li>
+					<li>
+						<div className={styles.divider} />
 					</li>
 					<li>
 						<Link href='/dashboard/1/misc'>
