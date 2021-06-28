@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from '../Header';
 import Footer from '../Footer';
-import * as styles from '../../styles/Stars.module.sass';
+// import * as styles from '../../styles/Stars.module.sass';
 
 export default function Layout({ children, page }) {
 	return (
