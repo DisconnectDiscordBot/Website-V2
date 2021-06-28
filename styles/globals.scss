@@ -1,0 +1,69 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Color Picker: https://imagecolorpicker.com/color-code/24252a */
+*:root {
+	--baseDark: #090c11;
+	--baseDarkTrans: #090c11a6;
+	--baseNormal: #0c0f22;
+	--baseBit: #0d131d;
+	--baseLight: #1b2433;
+	--textNormal: #ffffff;
+	--textGrey: #e0e0e0;
+	--primary: #ff1c5f;
+	--secondary: #ff5252;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.45;
+	color: var(--greytext);
+	scroll-behavior: smooth;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	background-size: cover;
+	background-color: var(--grey);
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+code {
+	padding: 5px 10px;
+	position: relative;
+	color: #e22b2b;
+	border-radius: 5px;
+	margin: 10px 10px;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background-color: var(--baseDark);
+}
+
+/* Scroll Bar */
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #0a0b10; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--primary);
+	border-radius: 10px;
+	transition: all 0.5s ease;
+	border: 3px solid #ffffff1c;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background-color: var(--secondary);
+	box-shadow: 0px 5px 10px #ff52525b;
+}

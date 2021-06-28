@@ -137,7 +137,7 @@ export default function Home({ servers, members, channels }) {
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
-										src='/assets/icons/users.svg'
+										src='/assets/icons/user-plus.svg'
 										alt='Welcoming Icon'
 									/>
 									<p className={styles.title}>Welcoming</p>
@@ -149,7 +149,7 @@ export default function Home({ servers, members, channels }) {
 								{/* <div className={styles.feature}>
 									<img
 										className={styles.feather}
-										src='/assets/icons/user-plus.svg'
+										src='/assets/icons/users.svg'
 										alt='Role Management Icon'
 									/>
 									<p className={styles.title}>

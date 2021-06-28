@@ -1,9 +1,8 @@
+import Sidebar from '../Sidebar';
 import Head from 'next/head';
-import Header from '../Header';
-import Footer from '../Footer';
-import * as styles from '../../styles/Stars.module.sass';
+import styles from '../../styles/dashboard/Sidebar.module.scss';
 
-export default function Layout({ children, page }) {
+export default function DashboardLayout({ children, page }) {
 	return (
 		<>
 			<Head>
@@ -37,15 +36,9 @@ export default function Layout({ children, page }) {
 				<link rel='canonical' href='https://disconnectbot.com' />
 			</Head>
 
-			{/* <div className={styles.stars} />
-			<div className={styles.stars2} />
-			<div className={styles.stars3} /> */}
-			<div id='content' style={{ overflow: 'hidden' }}>
+			<Sidebar page={page} />
+			<div id='content' className={styles.pageContent}>
 				{children}
-			</div>
-			<Header page={page} />
-			<div id='footer'>
-				<Footer />
 			</div>
 		</>
 	);

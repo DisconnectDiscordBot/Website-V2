@@ -1,5 +1,5 @@
 import Layout from '../../components/layouts/Layout';
-import styles from '../../styles/Redirect.module.scss';
+import styles from '../../styles/dashboard/Home.module.scss';
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -41,15 +41,43 @@ export default function Dashboard() {
 				</Head>
 				<div className={styles.container}>
 					<div className={styles.inner}>
-						<h2>Dashboard</h2>
-						<p>
-							The Dashboard is still in development. To check out
-							teasers for the upcoming dashboard join the support
-							server.
-						</p>
-						<Link href='https://discord.gg/gFJasaP5bf'>
-							<a>Join the Support Server</a>
-						</Link>
+						<h2>Please Select a Server</h2>
+						<div className={styles.servers} id='servers'>
+							<Link href='/dashboard/1'>
+								<div className={styles.guild}>
+									<div className={styles.innerGuild}>
+										<img
+											src='/disconnect.png'
+											alt='test image'
+										/>
+										<p>Disconnect Valley</p>
+									</div>
+									<a className={styles.goTo}>
+										Go to Dashboard
+									</a>
+								</div>
+							</Link>
+							<div className={styles.guild}>
+								<div className={styles.innerGuild}>
+									<img
+										src='/assets/DukeBotCircle.png'
+										alt='test image'
+									/>
+									<p>Duke - Support Server</p>
+								</div>
+								<a>Invite and Setup</a>
+							</div>
+							<div className={styles.guild}>
+								<div className={styles.innerGuild}>
+									<img
+										src='/assets/Cytech.png'
+										alt='test image'
+									/>
+									<p>Cytech Testing Server</p>
+								</div>
+								<a>Invite and Setup</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</Layout>
