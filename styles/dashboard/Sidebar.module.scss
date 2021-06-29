@@ -1,6 +1,7 @@
 .pageContent {
 	position: relative;
 	width: calc(100vw - 100px);
+	min-height: 100vh;
 	z-index: 0;
 	left: 90px;
 	color: #fff;
@@ -9,11 +10,16 @@
 .main {
 	width: 80px;
 	height: 100vh;
+	overflow-y: scroll;
 	position: fixed;
 	background-color: var(--baseDarkTrans);
 	transition: all 0.5s ease;
 	z-index: 1;
 	color: var(--textGrey);
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
 
 	.show,
 	.otherServers {
