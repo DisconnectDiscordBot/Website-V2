@@ -2,7 +2,7 @@ import DashboardLayout from '../../../components/layouts/DashboardLayout';
 import styles from '../../../styles/dashboard/Dashboard.module.scss';
 import Link from 'next/link';
 
-export default function Dashboard() {
+export default function Settings() {
 	return (
 		<>
 			<DashboardLayout page='settings'>
@@ -19,7 +19,7 @@ export default function Dashboard() {
 							</Link>
 						</li>
 						<li>
-							<Link href='/dashboard/1'>
+							<Link href='/dashboard/1/settings'>
 								<a className={styles.currentPage}>Settings</a>
 							</Link>
 						</li>
