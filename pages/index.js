@@ -137,7 +137,7 @@ export default function Home({ servers, members, channels }) {
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
-										src='/assets/icons/user-plus.svg'
+										src='/assets/icons/hand.svg'
 										alt='Welcoming Icon'
 									/>
 									<p className={styles.title}>Welcoming</p>
@@ -175,7 +175,7 @@ export default function Home({ servers, members, channels }) {
 								<div className={styles.feature}>
 									<img
 										className={styles.feather}
-										src='/assets/icons/video.svg'
+										src='/assets/icons/bell.svg'
 										alt='Media Icon'
 									/>
 									<p className={styles.title}>Media</p>
@@ -253,7 +253,7 @@ export default function Home({ servers, members, channels }) {
 									<img
 										className={styles.feather}
 										src='/assets/icons/users.svg'
-										alt='Welcoming Icon'
+										alt='User Icon'
 									/>
 									<p className={styles.num}>
 										{members
@@ -266,7 +266,7 @@ export default function Home({ servers, members, channels }) {
 									<img
 										className={styles.feather}
 										src='/assets/icons/list.svg'
-										alt='Welcoming Icon'
+										alt='Channel Icon'
 									/>
 									<p className={styles.num}>
 										{channels
@@ -324,7 +324,7 @@ export async function getStaticProps() {
 
 	return {
 		props: {
-			servers: 276,
+			servers: 272,
 			channels: 12504,
 			members: 103425,
 		},
