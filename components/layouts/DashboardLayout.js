@@ -6,6 +6,33 @@ export default function DashboardLayout({ children, page }) {
 	return (
 		<>
 			<Head>
+				<title>Disconnect • Dashboard</title>
+				<meta name='title' content='Disconnect • Dashboard' />
+				<meta
+					name='description'
+					content='Completely customize Disconnect using his dashboard. Coming Soon!'
+				/>
+				<meta
+					property='og:url'
+					content='https://disconnectbot.vercel.app/dashboard'
+				/>
+				<meta property='og:title' content='Disconnect • Dashboard' />
+				<meta
+					property='og:description'
+					content='Completely customize Disconnect using his dashboard. Coming Soon!'
+				/>
+				<meta
+					property='twitter:url'
+					content='https://disconnectbot.vercel.app/dashboard'
+				/>
+				<meta
+					property='twitter:title'
+					content='Disconnect • Dashboard'
+				/>
+				<meta
+					property='twitter:description'
+					content='Completely customize Disconnect using his dashboard. Coming Soon!'
+				/>
 				<meta name='theme-color' content='#ff1c5f' />
 				<meta property='og:type' content='website' />
 				<meta

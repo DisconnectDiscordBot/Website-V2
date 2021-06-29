@@ -43,10 +43,10 @@ export default function Dashboard() {
 									</p>
 								</div>
 							</Link>
-							<Link href='/dashboard/1/misc'>
+							<Link href='/dashboard/1/fun'>
 								<div className={styles.setting}>
 									<img
-										src='../../assets/icons/plus.svg'
+										src='../../assets/icons/smile.svg'
 										alt='Misc Icon'
 									/>
 									<p className={styles.title}>Fun</p>
@@ -59,7 +59,7 @@ export default function Dashboard() {
 							<Link href='/dashboard/1/games'>
 								<div className={styles.setting}>
 									<img
-										src='../../assets/icons/crosshair.svg'
+										src='../../assets/icons/flag.svg'
 										alt='Games Icon'
 									/>
 									<p className={styles.title}>Games</p>
@@ -72,17 +72,17 @@ export default function Dashboard() {
 							<Link href='/dashboard/1/roleplay'>
 								<div className={styles.setting}>
 									<img
-										src='../../assets/icons/users.svg'
+										src='../../assets/icons/cap.svg'
 										alt='Roleplay Icon'
 									/>
 									<p className={styles.title}>Roleplay</p>
 									<p>Kick, Punch, Slap, Feed, etc...</p>
 								</div>
 							</Link>
-							<Link href='/dashboard/1/imagery'>
+							<Link href='/dashboard/1/images'>
 								<div className={styles.setting}>
 									<img
-										src='../../assets/icons/camera.svg'
+										src='../../assets/icons/images.svg'
 										alt='Imagery Icon'
 									/>
 									<p className={styles.title}>Images</p>
@@ -144,6 +144,21 @@ export default function Dashboard() {
 									</p>
 									<p>
 										Kick, Ban, Purge... That kind of stuff
+									</p>
+								</div>
+							</Link>
+							<Link href='/dashboard/1/welcome'>
+								<div className={styles.setting}>
+									<img
+										src='../../assets/icons/hand.svg'
+										alt='Welcoming Icon'
+									/>
+									<p className={styles.title}>
+										Welcoming {'&'} Farewell
+									</p>
+									<p>
+										Welcome new members and say goodbye to
+										those who left
 									</p>
 								</div>
 							</Link>

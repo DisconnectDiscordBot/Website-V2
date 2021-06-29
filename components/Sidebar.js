@@ -8,10 +8,12 @@ export default function Sidebar({ page }) {
 
 	return (
 		<div className={styles.main}>
-			<div className={styles.branding}>
-				<img src='/disconnect.png' alt='Disconnect Logo' />
-				<h2 className={styles.show}>Disconnect</h2>
-			</div>
+			<Link href='/'>
+				<div className={styles.branding}>
+					<img src='/disconnect.png' alt='Disconnect Logo' />
+					<h2 className={styles.show}>Disconnect</h2>
+				</div>
+			</Link>
 			<div className={styles.divider} />
 			<div className={styles.dropdown}>
 				<div
@@ -120,6 +122,34 @@ export default function Sidebar({ page }) {
 					{/* <li>Levels</li>
 					<li>Economy</li> */}
 					<li>
+						<Link href='/dashboard/1/fun'>
+							<div className={styles.iconButton}>
+								<img
+									src='../../assets/icons/smile.svg'
+									className={
+										page === 'fun' ? styles.active : null
+									}
+									alt='Fun icon'
+								/>
+								<p className={styles.show}>Fun</p>
+							</div>
+						</Link>
+					</li>
+					<li>
+						<Link href='/dashboard/1/games'>
+							<div className={styles.iconButton}>
+								<img
+									src='../../assets/icons/flag.svg'
+									className={
+										page === 'games' ? styles.active : null
+									}
+									alt='Games icon'
+								/>
+								<p className={styles.show}>Games</p>
+							</div>
+						</Link>
+					</li>
+					<li>
 						<Link href='/dashboard/1/music'>
 							<div className={styles.iconButton}>
 								<img
@@ -151,7 +181,7 @@ export default function Sidebar({ page }) {
 						<Link href='/dashboard/1/images'>
 							<div className={styles.iconButton}>
 								<img
-									src='../../assets/icons/camera.svg'
+									src='../../assets/icons/images.svg'
 									className={
 										page === 'images' ? styles.active : null
 									}
@@ -203,7 +233,7 @@ export default function Sidebar({ page }) {
 						<Link href='/dashboard/1/welcome'>
 							<div className={styles.iconButton}>
 								<img
-									src='../../assets/icons/user-plus.svg'
+									src='../../assets/icons/hand.svg'
 									className={
 										page === 'welcome'
 											? styles.active
@@ -236,7 +266,7 @@ export default function Sidebar({ page }) {
 						<Link href='/dashboard/1/misc'>
 							<div className={styles.iconButton}>
 								<img
-									src='../../assets/icons/plus.svg'
+									src='../../assets/icons/dots.svg'
 									className={
 										page === 'misc' ? styles.active : null
 									}
