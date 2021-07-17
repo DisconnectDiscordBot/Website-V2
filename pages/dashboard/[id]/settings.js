@@ -1,11 +1,22 @@
 import DashboardLayout from '../../../components/layouts/DashboardLayout';
 import styles from '../../../styles/dashboard/Dashboard.module.scss';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import fakeData from '../../../public/fake';
+import { useState } from 'react';
 
 export default function Settings() {
+	const router = useRouter();
+	const { id } = router.query;
+	if (!id) return null;
+	const data = fakeData[id] ?? null;
+
+	const [prefix, setPrefix] = useState(data.prefix);
+	const [nickname, setNickname] = useState(data.nickname);
+
 	return (
 		<>
-			<DashboardLayout page='settings'>
+			<DashboardLayout page='settings' data={data} id={id}>
 				<div className={styles.container}>
 					<ul className={styles.breadcrumbs}>
 						<li>
@@ -48,6 +59,10 @@ export default function Settings() {
 									name='nickname'
 									maxLength='32'
 									placeholder='Disconnect'
+									value={nickname}
+									onChange={(e) =>
+										setNickname(e.target.value)
+									}
 								/>
 							</div>
 							<div className={styles.setting}>
@@ -62,6 +77,8 @@ export default function Settings() {
 									name='prefix'
 									maxLength='3'
 									placeholder='!'
+									value={prefix}
+									onChange={(e) => setPrefix(e.target.value)}
 								/>
 							</div>
 						</div>

@@ -1,11 +1,18 @@
 import DashboardLayout from '../../../components/layouts/DashboardLayout';
 import styles from '../../../styles/dashboard/Dashboard.module.scss';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import fakeData from '../../../public/fake';
 
 export default function Settings() {
+	const router = useRouter();
+	const { id } = router.query;
+	if (!id) return null;
+	const data = fakeData[id] ?? null;
+
 	return (
 		<>
-			<DashboardLayout page='music'>
+			<DashboardLayout page='music' data={data} id={id}>
 				<div className={styles.container}>
 					<ul className={styles.breadcrumbs}>
 						<li>

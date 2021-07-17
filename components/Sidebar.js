@@ -1,9 +1,9 @@
 import styles from '../styles/dashboard/Sidebar.module.scss';
 import { useState } from 'react';
+import fakeData from '../public/fake';
 import Link from 'next/link';
 
-export default function Sidebar({ page }) {
-	const guildName = 'Disconnect Valley';
+export default function Sidebar({ page, id, data }) {
 	const [dropdown, setDropdown] = useState(false);
 
 	return (
@@ -19,10 +19,10 @@ export default function Sidebar({ page }) {
 				<div
 					className={styles.selected}
 					onClick={() => setDropdown(!dropdown)}>
-					<img src='/disconnect.png' alt='Disconnect Valley Icon' />
+					<img src={data.icon} alt={`${data.name} Icon`} />
 					<h3 className={styles.show}>
-						{guildName.slice(0, -(guildName.length - 16))}
-						{guildName.length > 16 ? '...' : null}
+						{data.name.slice(0, -(data.name.length - 16))}
+						{data.name.length > 16 ? '...' : null}
 					</h3>
 					<img
 						src={
@@ -34,36 +34,32 @@ export default function Sidebar({ page }) {
 				</div>
 				{dropdown && (
 					<div className={styles.otherServers}>
-						<div className={styles.server}>
-							<img
-								src='/assets/Cytech.png'
-								alt='Cytech Testing Server Icon'
-							/>
-							<h3 className={styles.show}>
-								{'Cytech Testing Server'.slice(
-									0,
-									-('Cytech Testing Server'.length - 14),
-								)}
-								{'Cytech Testing Server'.length > 14
-									? '...'
-									: null}
-							</h3>
-						</div>
-						<div className={styles.server}>
-							<img
-								src='/assets/DukeBotCircle.png'
-								alt='Duke Support Server Icon'
-							/>
-							<h3 className={styles.show}>
-								{'Duke Support Server'.slice(
-									0,
-									-('Duke Support Server'.length - 14),
-								)}
-								{'Duke Support Server'.length > 14
-									? '...'
-									: null}
-							</h3>
-						</div>
+						{Object.keys(fakeData).map((i) => {
+							if (fakeData[i] && id !== i) {
+								const g = fakeData[i];
+								return (
+									<Link href={`/dashboard/${g.id}/${page}`}>
+										<div className={styles.server}>
+											<img
+												src={g.icon}
+												alt={`${g.name} Icon`}
+											/>
+											<h3 className={styles.show}>
+												{g.name.slice(
+													0,
+													-(g.name.length - 14),
+												)}
+												{g.name.length > 14
+													? '...'
+													: null}
+											</h3>
+										</div>
+									</Link>
+								);
+							} else {
+								return null;
+							}
+						})}
 					</div>
 				)}
 			</div>
@@ -71,7 +67,7 @@ export default function Sidebar({ page }) {
 			<div className={styles.nav}>
 				<ul>
 					<li>
-						<Link href='/dashboard/1'>
+						<Link href={`/dashboard/${data.id}`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/grid.svg'
@@ -85,7 +81,7 @@ export default function Sidebar({ page }) {
 						</Link>
 					</li>
 					<li>
-						<Link href='/dashboard/1/settings'>
+						<Link href={`/dashboard/${data.id}/settings`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/settings.svg'
@@ -101,7 +97,7 @@ export default function Sidebar({ page }) {
 						</Link>
 					</li>
 					<li>
-						<Link href='/dashboard/1/premium'>
+						<Link href={`/dashboard/${data.id}/premium`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/cart.svg'
@@ -122,7 +118,7 @@ export default function Sidebar({ page }) {
 					{/* <li>Levels</li>
 					<li>Economy</li> */}
 					<li>
-						<Link href='/dashboard/1/fun'>
+						<Link href={`/dashboard/${data.id}/fun`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/smile.svg'
@@ -136,7 +132,7 @@ export default function Sidebar({ page }) {
 						</Link>
 					</li>
 					<li>
-						<Link href='/dashboard/1/games'>
+						<Link href={`/dashboard/${data.id}/games`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/flag.svg'
@@ -150,7 +146,7 @@ export default function Sidebar({ page }) {
 						</Link>
 					</li>
 					<li>
-						<Link href='/dashboard/1/music'>
+						<Link href={`/dashboard/${data.id}/music`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/music.svg'
@@ -164,7 +160,7 @@ export default function Sidebar({ page }) {
 						</Link>
 					</li>
 					<li>
-						<Link href='/dashboard/1/roleplay'>
+						<Link href={`/dashboard/${data.id}/roleplay`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/users.svg'
@@ -178,7 +174,7 @@ export default function Sidebar({ page }) {
 						</Link>
 					</li>
 					<li>
-						<Link href='/dashboard/1/images'>
+						<Link href={`/dashboard/${data.id}/images`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/images.svg'
@@ -195,7 +191,7 @@ export default function Sidebar({ page }) {
 						<div className={styles.divider} />
 					</li>
 					<li>
-						<Link href='/dashboard/1/youtube'>
+						<Link href={`/dashboard/${data.id}/youtube`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/youtube.svg'
@@ -211,7 +207,7 @@ export default function Sidebar({ page }) {
 						</Link>
 					</li>
 					<li>
-						<Link href='/dashboard/1/twitter'>
+						<Link href={`/dashboard/${data.id}/twitter`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/twitter.svg'
@@ -230,7 +226,7 @@ export default function Sidebar({ page }) {
 						<div className={styles.divider} />
 					</li>
 					<li>
-						<Link href='/dashboard/1/welcome'>
+						<Link href={`/dashboard/${data.id}/welcome`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/hand.svg'
@@ -246,7 +242,7 @@ export default function Sidebar({ page }) {
 						</Link>
 					</li>
 					<li>
-						<Link href='/dashboard/1/moderation'>
+						<Link href={`/dashboard/${data.id}/moderation`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/lock.svg'
@@ -263,7 +259,7 @@ export default function Sidebar({ page }) {
 						<div className={styles.divider} />
 					</li>
 					<li>
-						<Link href='/dashboard/1/misc'>
+						<Link href={`/dashboard/${data.id}/misc`}>
 							<div className={styles.iconButton}>
 								<img
 									src='../../assets/icons/dots.svg'

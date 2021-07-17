@@ -1,11 +1,13 @@
 import DashboardLayout from '../../../components/layouts/DashboardLayout';
 import styles from '../../../styles/dashboard/Dashboard.module.scss';
 import { useRouter } from 'next/router';
+import fakeData from '../../../public/fake';
 import Link from 'next/link';
 
 export default function Dashboard() {
 	const router = useRouter();
 	const { id } = router.query;
+	const data = fakeData[id] ?? null;
 
 	if (!id) {
 		return (
@@ -24,10 +26,29 @@ export default function Dashboard() {
 				</div>
 			</>
 		);
+	} else if (!data) {
+		return (
+			<>
+				<div className={styles.loadingContainer}>
+					<div className={styles.loading}>
+						<h2>No Guild Found!</h2>
+						<p>
+							It seems like I was unable to find the guild you are
+							looking for! I may not be invited or you have went
+							to a random link. Please click the button below to
+							go back.
+						</p>
+						<Link href='/dashboard'>
+							<a>Select Guild</a>
+						</Link>
+					</div>
+				</div>
+			</>
+		);
 	} else {
 		return (
 			<>
-				<DashboardLayout page='main'>
+				<DashboardLayout page='main' data={data} id={id}>
 					<div className={styles.container}>
 						<ul className={styles.breadcrumbs}>
 							<li>
@@ -36,9 +57,9 @@ export default function Dashboard() {
 								</Link>
 							</li>
 							<li>
-								<Link href='/dashboard/1'>
+								<Link href={`/dashboard/${id}`}>
 									<a className={styles.currentPage}>
-										Disconnect Valley
+										{data.name}
 									</a>
 								</Link>
 							</li>
@@ -52,7 +73,7 @@ export default function Dashboard() {
 							<p>What kind of fun can we have?</p>
 							<div className={styles.divider} />
 							<div className={styles.settings}>
-								<Link href='/dashboard/1/music'>
+								<Link href={`/dashboard/${id}/music`}>
 									<div className={styles.module}>
 										<img
 											src='../../assets/icons/music.svg'

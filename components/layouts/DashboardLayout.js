@@ -2,7 +2,7 @@ import Sidebar from '../Sidebar';
 import Head from 'next/head';
 import styles from '../../styles/dashboard/Sidebar.module.scss';
 
-export default function DashboardLayout({ children, page }) {
+export default function DashboardLayout({ children, page, id, data }) {
 	return (
 		<>
 			<Head>
@@ -63,7 +63,7 @@ export default function DashboardLayout({ children, page }) {
 				<link rel='canonical' href='https://disconnectbot.com' />
 			</Head>
 
-			<Sidebar page={page} />
+			<Sidebar page={page} data={data} id={id} />
 			<div id='content' className={styles.pageContent}>
 				{children}
 			</div>
